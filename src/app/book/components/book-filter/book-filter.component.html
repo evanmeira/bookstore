@@ -1,0 +1,33 @@
+<div class="cart">
+  <div class="card-header">Filtros</div>
+  <div class="card-body">
+    <form>
+      <h5 class="card-subtitle mb-2">Price</h5>
+      <div class="input-group input-group-sm mb-2">
+        <span class="input-group-text">From</span>
+        <input type="text" name="fromPrice" class="form-control" [(ngModel)]="fromPrice">
+      </div>
+      <div class="input-group input-group-sm">
+        <span class="input-group-text">To</span>
+        <input type="text" name="toPrice" class="form-control" [(ngModel)]="toPrice">
+      </div>
+      
+      <button type="button" class="btn btn-primary mt-2 btn-sm me-2" (click)="applyPriceFilter()">Apply Filter</button>
+      <button type="button" class="btn btn-secondary mt-2 btn-sm" (click)="removePriceFilter()">Remove</button>
+
+      <hr>
+
+      <h5 class="card-subtitle">Category</h5>
+      <div class="form-group">        
+        <select id="category" class="form-select form-select-sm mt-2 w-100">
+          <option value="1">Fantasy</option>
+          <option value="1">History</option>
+          <option value="1">Graphic novel</option>
+        </select>
+      </div>
+
+      <button type="button" class="btn btn-primary mt-2 btn-sm me-2">Apply Filter</button>
+      <button type="button" class="btn btn-secondary mt-2 btn-sm">Remove</button>
+    </form>
+  </div>
+</div>

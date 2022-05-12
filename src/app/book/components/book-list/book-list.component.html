@@ -1,0 +1,11 @@
+<div class="row">
+
+  <app-book-filter class="col-md-2" (priceFilterEvent)="applyPriceFilter($event)"></app-book-filter>
+
+  <div class="col-md-10 row">
+    <div class="col-md-3" *ngFor="let book of books">
+      <app-book-item [book]="book"></app-book-item>
+    </div>
+  </div>
+
+</div>
